@@ -6,7 +6,6 @@ class TaskSerializer(serializers.ModelSerializer):
         model = Task
         fields = '__all__'
         
-from rest_framework import serializers     
 from django.contrib.auth.models import User
 from rest_framework.validators import UniqueValidator
 
