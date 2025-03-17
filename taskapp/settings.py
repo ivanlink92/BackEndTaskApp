@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'taskapp.wsgi.application'
+WSGI_APPLICATION = 'taskapp.wsgi.app'
 
 
 # Database
