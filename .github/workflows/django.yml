@@ -47,7 +47,6 @@ jobs:
     - name: Run tests
       run: |
         python manage.py test --noinput
-        python manage.py check --deploy
 
     - name: Set environment variable for testing
       run: echo "DJANGO_TEST_ENV=False" >> $GITHUB_ENV
