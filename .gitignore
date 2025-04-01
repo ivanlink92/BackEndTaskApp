@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Virtual environments
+venv/
+.venv/
+.env/
+*.env
+Pipfile
+Pipfile.lock
+
+# Django-related files
+# *.sqlite3
+# db.sqlite3
+/media/
+staticfiles/
+*.log
+
+# Migrations (optional, if you don't want to track them)
+# **/migrations/*.py
+# !**/migrations/__init__.py
+
+# VSCode and JetBrains IDEs
+.vscode/
+.idea/
+
+# macOS and Linux
+.DS_Store
+*.swp
+*.swo
+
+# Vercel & Deployment
+.vercel/
+runtime.txt
+
+# Ignore compiled translation files
+*.mo
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
