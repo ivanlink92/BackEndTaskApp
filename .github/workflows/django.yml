@@ -40,8 +40,14 @@ jobs:
       run: |
         python manage.py migrate --noinput 
         python manage.py collectstatic --noinput  
+    
+    - name: Set environment variable for testing
+      run: echo "DJANGO_TEST_ENV=True" >> $GITHUB_ENV
 
     - name: Run tests
       run: |
         python manage.py test --noinput
         python manage.py check --deploy
+
+    - name: Set environment variable for testing
+      run: echo "DJANGO_TEST_ENV=False" >> $GITHUB_ENV
