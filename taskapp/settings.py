@@ -149,6 +149,9 @@ STATIC_ROOT = os.path.join(
     BASE_DIR, "staticfiles"
 )  # Ensure static files are collected here
 
+# Enable WhiteNoise to serve static files
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
